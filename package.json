@@ -1,0 +1,30 @@
+{
+    "name": "vscode-form",
+    "displayName": "FORM Syntax Highlighting",
+    "description": "Syntax highlighting for the symbolic manipulation toolkit FORM.",
+    "author": {
+        "name": "Ben Ruijl"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/benruijl/vscode-form"
+    },
+    "version": "0.0.1",
+    "engines": {
+        "vscode": ">=0.9.0-pre.1"
+    },
+    "publisher": "benruijl0774",
+    "contributes": {
+        "languages": [{
+            "id": "form",
+            "aliases": ["Form", "FORM"],
+            "extensions": [".frm",".h",".prc"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "form",
+            "scopeName": "source.form",
+            "path": "./syntaxes/form.tmLanguage"
+        }]
+    }
+}
